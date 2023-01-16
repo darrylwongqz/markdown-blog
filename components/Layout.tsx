@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import Header from './Header';
 
 type Props = {
   title: string;
@@ -17,6 +18,8 @@ function Layout({ title, keywords, description, children }: Props) {
         <meta name="description" content={description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <Header />
 
       <main className="container mx-auto my-7">{children}</main>
     </div>
