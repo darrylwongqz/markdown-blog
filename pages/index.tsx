@@ -24,6 +24,7 @@ type Props = {
 };
 
 const Home: NextPage<Props> = ({ posts }) => {
+  console.log(posts);
   return (
     <Layout>
       <h1>Hello World</h1>
